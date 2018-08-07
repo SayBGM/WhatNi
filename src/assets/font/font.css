@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'NanumSquare';
+  font-display: auto;
+  font-weight: 400;
+  src: url(NanumSquare/NanumSquareR.eot);
+  src: url(NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(NanumSquare/NanumSquareR.woff) format('woff'),
+       url(NanumSquare/NanumSquareR.ttf) format('truetype');
+ }
+ @font-face {
+  font-family: 'NanumSquare';
+  font-display: auto;
+  font-weight: 700;
+  src: url(NanumSquare/NanumSquareB.eot);
+  src: url(NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(NanumSquare/NanumSquareB.woff) format('woff'),
+       url(NanumSquare/NanumSquareB.ttf) format('truetype');
+ }
+ @font-face {
+  font-family: 'NanumSquare';
+  font-display: auto;
+  font-weight: 800;
+  src: url(NanumSquare/NanumSquareEB.eot);
+  src: url(NanumSquare/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+       url(NanumSquare/NanumSquareEB.woff) format('woff'),
+       url(NanumSquare/NanumSquareEB.ttf) format('truetype');
+ }

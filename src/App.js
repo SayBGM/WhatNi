@@ -1,26 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.scss';
+import Splash from './container/defaultLayout/Splash';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Route path='/' component={Temp}/>
-      </BrowserRouter>
+      <Fragment>
+        <Splash/>
+        <BrowserRouter>
+        </BrowserRouter>
+      </Fragment>
     );
   }
 }
-
-const Temp = () => (
-  <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
-        </div>
-)
 
 export default App;
