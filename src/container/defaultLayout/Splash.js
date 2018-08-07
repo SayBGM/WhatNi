@@ -1,27 +1,16 @@
 import React, { Component } from 'react';
+import Icon from './../../assets/Icon.png';
 import './css/Splash.scss';
 
 class Splash extends Component {
-  constructor(){
-    super();
-    this.state={
-      screenNum: 0,
-    }
-  }
-  componentDidMount(){
-    this.setState({screenNum: Math.floor(Math.random() * 2) + 1});
-  }
   render() { 
-    const { screenNum } = this.state;
     return (
-      <div className={`Splash Splash--screen${screenNum}`}>
+      <div className={`Splash Splash--screen`}>
         <div className="Splash__wrapper">
-          <div className="Splash__wrapper__Icon">
-            아이콘
-          </div>
+          <img src={Icon} alt="왔니 아이콘" className="Splash__wrapper__Icon"/>
           <div className="Splash__wrapper__Title">
             <div>WHATNI</div>
-            <div className="Splash__wrapper__Title--sub">출석체크는 왔니로</div>
+            <div className="Splash__wrapper__Title--sub">출석체크는 '왔니'로</div>
           </div>
         </div>
         <div className="Splash__Copyright">

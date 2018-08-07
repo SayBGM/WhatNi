@@ -1,0 +1,15 @@
+.AdminExcel{
+  position: relative;
+  padding: 30px;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  &__Download{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(40, 162, 0);
+  }
+}

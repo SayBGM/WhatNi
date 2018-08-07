@@ -3,3 +3,8 @@ body {
   padding: 0;
   font-family: 'NanumSquare', sans-serif;
 }
+a:-webkit-any-link {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}

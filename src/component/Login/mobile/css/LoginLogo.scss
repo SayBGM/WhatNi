@@ -1,0 +1,12 @@
+.LoginLogo{
+  margin: 0 auto;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #65c7f7;
+  margin-bottom: 30vh;
+  &__img{
+    width: 100%;
+    border-radius: 15px;
+  }
+}

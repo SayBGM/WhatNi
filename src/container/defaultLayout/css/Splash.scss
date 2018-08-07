@@ -9,20 +9,15 @@
   opacity: 0;
   bottom: 100vh;
   color: #FFF;
-  &--screen1 {
+  z-index: 999;
+  &--screen {
     background-color: #65C7F7;
-  }
-  &--screen2{
-    background-color: #000;
   }
   &__wrapper{
     margin: 0 auto;
     &__Icon{
-      width: 15vmax;
-      height: 15vmax;
-      background-color: #FFF;
+      width: 25vmax;
       border-radius: 15px;
-      color: #000;
       margin: 0 auto;
     }
     &__Title{
@@ -46,6 +41,11 @@
 @media (min-width: 768px) {
   .Splash{
     &__wrapper{
+      &__Icon{
+        margin: 0 auto;
+        width: 15vmax;
+        border-radius: 15px;
+      }
       &__Title{
         text-align: center;
         font-size: 2.5vmax;

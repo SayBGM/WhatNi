@@ -1,0 +1,71 @@
+.AdminNavigation{
+  position: fixed;
+  width: 370px;
+  height: calc(100vh - 40px);
+  background-color: #ffffff;
+  box-shadow: 5px 0 6px 0 rgba(0, 0, 0, 0.5);
+  padding-top: 40px;
+  &__icon{
+    text-align: center;
+    width: 100px;
+    position: relative;
+    left: calc(50% - 50px);
+  }
+  & p{
+    margin-left: 40px;
+  }
+  &__hello{
+    margin-top: 60px;
+    font-size: 26px;
+    color: #2d99ce;
+    &__name{
+      font-weight: 700;
+    }
+  }
+  &__logout{
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+    font-size: 21px;
+    color: #2d99ce;
+  }
+  &__hr{
+    width: 300px;
+    height: 0;
+    opacity: 0.5;
+    border: solid 1px #65c7f7;
+    margin: 0 auto;
+  }
+  &__time{
+    margin: 20px 0 20px 40px;
+    font-size: 20px;
+    color: #2d99ce;
+  }
+  &__btn{
+    width: calc(100& - 40px);
+    height: 90px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    text-decoration: none;
+    color: #2d99ce;
+    & span{
+      margin-left: 10px;
+    }
+    &div span:link{
+      text-decoration: none;
+    }
+    &div span:visited{
+      text-decoration: none;
+    }
+    &:hover{
+      color: #FFF;
+      background-image: linear-gradient(to right, #65c7f7, #81daf9 42%, #ffffff);
+    }
+    &--open{
+      color: #FFF;
+      background-image: linear-gradient(to right, #65c7f7, #81daf9 42%, #ffffff);
+    }
+  }
+}

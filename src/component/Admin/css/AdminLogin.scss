@@ -1,0 +1,75 @@
+.AdminLogin{
+  position: relative;
+  top: calc(50% - 300px);
+  width: 1000px;
+  height: 550px;
+  border-radius: 60px;
+  background-color: #ffffff;
+  border: solid 1px #707070;
+  margin: auto auto;
+  &__TitleBox{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    &__Icon{
+      width: 230px;
+      margin: 0 125px;
+      border-radius: 30px;
+      margin-top: 115px;
+    }
+    &__title{
+      margin-top: 35px;
+      display: block;
+      font-family: 'NanumSquare';
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.14;
+      text-align: center;
+      color: #65c7f7;
+    }
+  }
+  &__Inputbox{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+
+    &__title{
+      display: block;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 1.14;
+      text-align: center;
+      color: #65c7f7;
+      margin-top: 25%;
+    }
+    &__input{
+      display: block;
+      padding-left: 20px;
+      width: 340px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      border: solid 2px #65c7f7;
+      color: #65c7f7;
+      font-size: 20px;
+      margin: 25px auto;
+      &::placeholder{
+        color: #9ddcfc;
+      }
+    }
+    &__btn{
+      width: 360px;
+      height: 65px;
+      border-radius: 10px;
+      background-color: #65c7f7;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      margin: 0 67.5px;
+      border: 0;
+    }
+  }
+}
