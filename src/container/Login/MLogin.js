@@ -6,8 +6,8 @@ import LoginForm from '../../component/Login/mobile/LoginForm';
 class MLogin extends Component {
   render() { 
     return (
-      <div className="Login">
-        <div className="Login_wrapper">
+      <div className="MLogin">
+        <div className="MLogin_wrapper">
           <LoginLogo/>
           <LoginForm/>
         </div>

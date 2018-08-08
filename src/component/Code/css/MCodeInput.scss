@@ -1,0 +1,29 @@
+.MCodeInput__input{
+  width: 335px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #FFF;
+  border: #65c7f7 2px solid;
+  position: relative;
+  margin-top: 55%;
+  left: calc(50% - 168px);
+  font-size: 20px;
+  text-align: center;
+  color: #65c7f7;
+  line-height: 50px;
+}
+.MCodeInput__btn{
+  width: 335px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #65c7f7;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 50px;
+}
+.MCodeInput{
+  position: relative;
+  top: 30%;
+}

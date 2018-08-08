@@ -11,6 +11,11 @@ class LoginForm extends Component {
       authNum: '',
     }
   }
+  componentDidMount(){
+    if(cookie.load('JWT')){
+      window.location.href = '/main';
+    }
+  }
   render() {
     const {authNum} = this.state;
     return (
@@ -30,6 +35,7 @@ class LoginForm extends Component {
       switch(res.status){
         case 200:
           cookie.save('JWT', res.data.uuid, {path: '/'});
+          window.location.href = '/main';
           break;
         default:
           alert('인증코드가 잘못되었습니다. 다시 확인하시기 바랍니다.');

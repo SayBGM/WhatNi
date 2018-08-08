@@ -10,13 +10,12 @@ class AdminCode extends Component {
     CheckCode: '',
   };
   componentDidMount(){
-    axios.get('http://ec2-52-79-234-20.ap-northeast-2.compute.amazonaws.com:5000/admin/makecode').then(res=>{
-      if(res.status === 200){
-        this.setState({CheckCode: res.data.code, isMake: true});
+      axios.get('http://ec2-52-79-234-20.ap-northeast-2.compute.amazonaws.com:5000/admin/getcode').then(res=>{
+        if(res.status === 200){
+          this.setState({CheckCode: res.data, isMake: true});
       }
-      return;
-    })
-  }
+      })
+    }
   render() { 
     const {isMake, CheckCode} = this.state;
     return (
@@ -25,17 +24,13 @@ class AdminCode extends Component {
         <div className="AdminCode__wrapper">
           <div className="AdminCode__wrapper__Qrcode">
             <h1>QR코드</h1>
-            {/*<QRcode value={`url/check/${CheckCode}`}/>*/}
-            <QRcode value={`https://www.naver.com`}/>
+            <QRcode value={`https://service.whatni.ga/main/code/${CheckCode}`}/>
           </div>
           <div className="AdminCode__wrapper__NumCode">
             <h1>출석 코드</h1>
             <h2>{CheckCode}</h2>
           </div>
           <div className="AdminCode__wrapper__btns">
-            <div className="AdminCode__wrapper__btns__btn --blue">
-              코드 재발급
-            </div>
             <div className="AdminCode__wrapper__btns__btn --red" onClick={()=>{this.setState({isMake:false})}}>
               삭제
             </div>
@@ -55,7 +50,11 @@ class AdminCode extends Component {
   getCode(){
     axios.get('http://ec2-52-79-234-20.ap-northeast-2.compute.amazonaws.com:5000/admin/makecode').then(res=>{
       if(res.status === 201){
-        this.setState({CheckCode: res.data, isMake: true});
+        axios.get('http://ec2-52-79-234-20.ap-northeast-2.compute.amazonaws.com:5000/admin/getcode').then(res=>{
+          if(res.status === 200){
+            this.setState({CheckCode: res.data, isMake: true});
+        }
+      })
       }
     })
   }
