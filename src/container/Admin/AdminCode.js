@@ -24,7 +24,7 @@ class AdminCode extends Component {
         <div className="AdminCode__wrapper">
           <div className="AdminCode__wrapper__Qrcode">
             <h1>QR코드</h1>
-            <QRcode value={`https://service.whatni.ga/main/code/${CheckCode}`}/>
+            <QRcode value={`http://service.whatni.ga:3000/main/code?code=${CheckCode}`}/>
           </div>
           <div className="AdminCode__wrapper__NumCode">
             <h1>출석 코드</h1>
