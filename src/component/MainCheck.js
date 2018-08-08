@@ -24,8 +24,8 @@ class MainCheck extends Component {
       <div className="Maincontents">
         <div>
           <div className="Maincontents__days">
-            <div className="Maincontents__days --s"><Clock format="DD.MM.YYYY"/></div>
-            <div className="Maincontents__days --b"><Clock format="HH.mm.ss"/></div>
+            <div className="Maincontents__days --s"><Clock format="DD.MM.YYYY" ticking={true}/></div>
+            <div className="Maincontents__days --b"><Clock format="HH.mm.ss" ticking={true}/></div>
           </div>
           <div className="Maincontents__codeInput">
             <input style={{margin: '0 auto'}} type="text" value={code} onChange={(event)=>{this.setState({code:event.target.value})}} placeholder="인증번호"/>
