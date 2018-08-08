@@ -1,0 +1,12 @@
+.AdmindefaultLayout{
+  &__contents{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: calc(90% - 370px);
+    height: 90%;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border: solid 1px #707070;
+  }
+}

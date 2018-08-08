@@ -1,0 +1,81 @@
+.Splash{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: splash 3s;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  bottom: 100vh;
+  color: #FFF;
+  z-index: 999;
+  &--screen {
+    background-color: #65C7F7;
+  }
+  &__wrapper{
+    margin: 0 auto;
+    &__Icon{
+      width: 25vmax;
+      border-radius: 15px;
+      margin: 0 auto;
+    }
+    &__Title{
+      text-align: center;
+      font-size: 4vmax;
+      margin-top: 10vh;
+      &--sub{
+        margin-top: 3vh;
+        font-size: 3vmax;
+      }
+    }
+  }
+  &__Copyright{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 5%;
+    font-size: 1vmin;
+  }
+}
+
+@media (min-width: 768px) {
+  .Splash{
+    &__wrapper{
+      &__Icon{
+        margin: 0 auto;
+        width: 15vmax;
+        border-radius: 15px;
+      }
+      &__Title{
+        text-align: center;
+        font-size: 2.5vmax;
+        margin-top: 10vh;
+        &--sub{
+          margin-top: 3vh;
+          font-size: 1.75vmax;
+        }
+      }
+    }
+  }
+}
+
+@keyframes splash{
+  0%{
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    opacity: 1;
+  }
+  80%{
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    opacity: 1;
+  }
+  100%{
+    width: 100vw;
+    height: 100vh;
+    bottom: 30%;
+    opacity: 0;
+  }
+}
